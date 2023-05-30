@@ -1,0 +1,248 @@
+section {
+  padding: 5em 0;
+}
+
+.hero {
+  padding: 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--main-bg-grey);
+  gap: 2em;
+}
+
+.products h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  width: 100%;
+  row-gap: 2em;
+}
+
+.product {
+  text-align: center;
+}
+
+.product__title h2,
+.product__price p {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.product__title {
+  padding-bottom: 1em;
+}
+
+.product__title p {
+  font-weight: 300;
+}
+
+.product__price button {
+  background-color: var(--main-bg-grey);
+  border: none;
+  font-weight: 300;
+  width: 100%;
+  max-width: 180px;
+}
+
+.product__price button:hover {
+  background-color: #000;
+  color: var(--main-bg-grey);
+}
+
+.article__text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.article__text--big {
+  font-size: 18px;
+}
+
+.kryb--bold {
+  font-weight: 900;
+}
+
+.om__kryb h2 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.om__kryb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  border-bottom: 1px solid var(--main-bg-grey);
+}
+
+.om__kryb__flex {
+  display: flex;
+  gap: 1em;
+}
+
+.om__kryb__flex article {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  color: #fff;
+  background-color: var(--main-bg-grey);
+  font-size: 30px;
+  border-radius: 50%;
+  /* Fontawesome bliver ved med at sætte display: block på */
+  display: flex !important;
+  /* */
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+}
+
+.opskrifter h3 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.opskrifter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  border-bottom: 1px solid var(--main-bg-grey);
+}
+
+.opskrifter__gallery {
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+  justify-items: center;
+  width: 100%;
+  gap: 4em;
+}
+
+.slide {
+  display: grid;
+}
+
+.slide--hide {
+  display: none;
+}
+
+.slide__img,
+.slide__text {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.slide__img {
+  width: 100%;
+  height: 100%;
+  max-height: 269px;
+  /* Billederne bliver en smule større på hover selvom width og height 100% */
+  /* Det her fixer problemet */
+  margin: 0.05em;
+}
+
+.slide__text {
+  display: none;
+  align-self: end;
+  justify-self: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0.5em 0 0.5em 1em;
+  /* Udligner margin så det er centreret */
+  margin-left: 0.05em;
+}
+
+.slide__img:hover + .slide__text {
+  display: block;
+}
+
+.slide__text--bold {
+  font-weight: 900;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border-bottom: 1px solid var(--main-bg-grey);
+}
+
+.kontakt__flex {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.kontakt h4 {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.kontakt__article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  max-width: 480px;
+}
+
+.form__bg {
+  background-color: var(--main-bg-grey);
+  padding: 2em;
+  width: 100%;
+  max-width: 480px;
+  width: 100%;
+}
+
+.kontakt__form {
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+}
+
+.kontakt__form input {
+  height: 30px;
+  padding: 0 0.5em;
+}
+
+.kontakt__form input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+.kontakt button {
+  border: none;
+  background-color: #fff;
+  max-width: 100px;
+  padding: 0.5em 2em;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+.form__submit {
+  align-self: end;
+}

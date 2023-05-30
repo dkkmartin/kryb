@@ -1,0 +1,64 @@
+header {
+  background-color: var(--main-bg-grey);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0.5em 0;
+}
+
+.fa-bag-shopping {
+  color: #000;
+  font-size: 24px;
+}
+
+.header__search {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.search {
+  background-color: var(--main-bg-white);
+  justify-self: start;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 80%;
+  height: 46px;
+  padding-left: 1em;
+}
+
+.search input {
+  outline: none;
+  border: none;
+}
+
+.header__links {
+  font-weight: 300;
+}
+
+.header__links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__links ul {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+  padding: 0 0.5em;
+}
+
+.links__item {
+  list-style-type: none;
+}
+
+.links__item:hover {
+  color: #fff;
+}
+
+.links__item--last {
+  margin-left: auto;
+  font-style: italic;
+}
